@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=description content="Generacion de las personas" />
+    <meta name="keywords" content="HTML, CSS, JavaScript,generacion,año,edad" />
+    <meta   name="author" content="Jose Bovi" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="container">
+      <form id="personaForm" class="my-3 mx-3">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required /><br />
+        </div>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad:</label>
+          <input type="number" id="edad" name="edad" required /><br />
+        </div>
+        <div class="mb-3">
+          <label for="sexo" class="form-label">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="H">Hombre</option>
+            <option value="M">Mujer</option></select
+          ><br />
+        </div>
+        <div class="mb-3">
+          <label for="peso" class="form-label">Peso:</label>
+          <input type="number" id="peso" name="peso" required /><br />
+        </div>
+        <div class="mb-3">
+          <label for="altura" class="form-label">Altura:</label>
+          <input type="number" id="altura" name="altura" required /><br />
+        </div>
+        <div class="mb-3">
+          <label for="anioNacimiento" class="form-label"
+            >Año de Nacimiento:</label
+          >
+          <input
+            type="number"
+            id="anioNacimiento"
+            name="anioNacimiento"
+            required
+          /><br />
+        </div>
+        <input type="submit" id="crearPersona" value="Crear Persona" class="btn btn-primary my-2"/>
+      </form>
+      <button type="button" class="btn btn-primary mx-3" id="mostrarGeneracion">
+        Mostrar Generación
+      </button>
+      <button type="button" class="btn btn-primary" id="mayorEdad">Es Mayor de Edad</button>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/persona.js"></script>
+  </body>
+</html>

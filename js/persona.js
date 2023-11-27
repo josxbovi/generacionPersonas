@@ -89,13 +89,13 @@ class Persona {
 document.getElementById("personaForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  var nombre = document.getElementById("nombre").value;
-  var edad = document.getElementById("edad").value;
-  var sexo = document.getElementById("sexo").value;
-  var peso = document.getElementById("peso").value;
-  var altura = document.getElementById("altura").value;
-  var añoNacimiento = document.getElementById("anioNacimiento").value;
-  var persona = new Persona(nombre, edad, sexo, peso, altura, añoNacimiento);
+  let nombre = document.getElementById("nombre").value;
+  let edad = document.getElementById("edad").value;
+  let sexo = document.getElementById("sexo").value;
+  let peso = document.getElementById("peso").value;
+  let altura = document.getElementById("altura").value;
+  let añoNacimiento = document.getElementById("anioNacimiento").value;
+  let persona = new Persona(nombre, edad, sexo, peso, altura, añoNacimiento);
 
   alert("Persona Creada");
 

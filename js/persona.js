@@ -89,30 +89,24 @@ class Persona {
 document.getElementById("personaForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Obtener los valores del formulario
   var nombre = document.getElementById("nombre").value;
   var edad = document.getElementById("edad").value;
   var sexo = document.getElementById("sexo").value;
   var peso = document.getElementById("peso").value;
   var altura = document.getElementById("altura").value;
   var añoNacimiento = document.getElementById("anioNacimiento").value;
-
-  // Crear una instancia de Persona
   var persona = new Persona(nombre, edad, sexo, peso, altura, añoNacimiento);
 
-  // Mostrar los datos en algún lugar, por ejemplo, en un div con el id 'datos'
-  persona.mostrarDatos();
+  alert("Persona Creada");
 
-  // Agregar un evento al botón después de crear la instancia de Persona
   document
     .getElementById("mostrarGeneracion")
     .addEventListener("click", function () {
       console.log("Generación: " + persona.mostrarGeneracion());
       persona.mostrarGeneracion;
     });
-    document.getElementById("mayorEdad").addEventListener("click", function () {
-      console.log("Es mayor de edad: " + persona.esMayorDeEdad());
-      persona.esMayorDeEdad;
-    });
-
+  document.getElementById("mayorEdad").addEventListener("click", function () {
+    console.log("Es mayor de edad: " + persona.esMayorDeEdad());
+    persona.esMayorDeEdad;
+  });
 });
